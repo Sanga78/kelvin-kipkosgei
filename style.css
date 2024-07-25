@@ -1,0 +1,570 @@
+:root {
+    --main-color: #f06449;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    --white: rgb(255, 255, 255);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn,
+button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.btn:hover {
+    letter-spacing: 0.2rem;
+    background: #f0938c;
+}
+
+.header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 6rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .login-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .login-icon .login {
+    padding-left: 2rem;
+}
+
+.header .icons i {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons i:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
+
+.home {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url('assets/clint-patterson-dYEuFB8KQJk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.home .content {
+    max-width: 50rem;
+    flex: 1 1 45rem;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.home .content h3 {
+    font-family: 'Georgia', serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-style: italic;
+}
+
+.home .content p {
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.home .profile_pic {
+    max-width: 300px;
+    flex: 1 1 45rem;
+    border-radius: 300px 200px 200px 0;
+    height: 250px;
+    border: 1px solid white;
+    background-image: url('assets/Profil.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .content a {
+    background-color: transparent;
+    border: var(--border);
+    border-radius: 2rem;
+}
+.home .content a:hover{
+    letter-spacing: normal;
+    background-color: var(--main-color);
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.about .about_content {
+    display: none;
+}
+
+.about .about_content .active {
+    display: block;
+}
+  
+.projects .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+   .background{
+    font-size: 1.5rem;
+   }
+  .background h2 {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 20px;
+    animation: text-fade-in 1s ease-in-out forwards; 
+  }
+  
+  .background .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: content-fade-in 1s ease-in-out 0.5s forwards;
+  }
+   
+  .background .row ul {
+    padding: 0;
+  }
+  
+  .background .row ul li {
+    margin-bottom: 10px;
+    color: var(--white);
+  }  
+
+.contacts .row {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+    color: var(--main-color); 
+    font-size: 2rem;
+}
+
+.contacts .row > div {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contacts .row h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+    border: var(--border);
+}
+
+/* .blogs .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+} */
+
+.blogs .box-container .box .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.blogs .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.blogs .box-container .box .image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+    border-radius: 10px; 
+}
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.blogs .box-container .box .content .title:hover {
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blogs .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+.footer {
+    background: var(--black);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a {
+    padding: 0.7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .credit {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span {
+    color: var(--main-color);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes text-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes content-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    header nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: var(--bg);
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+        display: none;
+    }
+    header nav.active {
+        display: block;
+    }
+    .header .navbar a {
+        color: var(--white);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+    .header .search-form {
+        width: 90%;
+        right: 2rem;
+    }
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+    .home .content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+.header .menu-icon{
+    padding: 8px 10px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.header .menu-icon .nav-icon{
+    background: var(--main-color);
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+.header .menu-icon .nav-icon:before{
+    background: var(--main-color);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+.header .menu-icon .nav-icon:after{
+    background: var(--main-color);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+.header .menu-btn{
+    display: none;
+}
+.header .menu-btn:checked ~ .navbar{
+    max-height: 400px;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width:40em){
+    .header .menu-icon{
+        display: none;
+    }
+}
