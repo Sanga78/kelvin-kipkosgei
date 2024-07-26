@@ -583,7 +583,7 @@ button {
     color: var(--white);
     border: var(--border);
     font-size: 1.2rem;
-    /* display: none; */
+    display: none;
 }
 
 .modal__half{
