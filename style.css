@@ -270,6 +270,7 @@ figcaption{
     justify-content: space-around;
     align-items: center;
     animation: content-fade-in 1s ease-in-out 0.5s forwards;
+    flex-wrap: wrap;
   }
    
   .background .row ul {
