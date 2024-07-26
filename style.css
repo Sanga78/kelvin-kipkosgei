@@ -163,17 +163,40 @@ button {
     padding: 1rem 0;
     color: #fff;
 }
-
-.home .profile_pic {
-    max-width: 300px;
-    flex: 1 1 45rem;
-    border-radius: 300px 200px 200px 0;
-    height: 250px;
-    border: 1px solid white;
-    background-image: url('assets/Profil.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.profile_pic{
+    animation: fade-in-left 1s ease-out forwards;
+}
+@keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+figure {
+    border: var(--border);
+    padding: 30px;
+    margin: 0;
+    border-radius: 200px 200px 200px 0;
+}
+  
+figure:hover {
+    background-color: rgba(255, 253, 253, 0.423);
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    color: var(--black);
+}
+  
+figure img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+figcaption{
+    font-size: 1rem;
 }
 
 .home .content a {
@@ -209,12 +232,12 @@ button {
 
 .about .row .content h3 {
     font-size: 3rem;
-    color: #fff;
+    color: var(--white);
 }
 
 .about .row .content p {
     font-size: 1.6rem;
-    color: #ccc;
+    color: var(--white);
     padding: 1rem 0;
     line-height: 1.8;
 }
