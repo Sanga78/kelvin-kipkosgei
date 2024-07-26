@@ -10,7 +10,7 @@
     <!-- custom css link -->
     <link rel="stylesheet" href="style.css">
     <!-- javascript link -->
-    <script type="module" src="script.js" defer></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- header section starts here -->
@@ -49,11 +49,56 @@
             </div>
             <div class="content">
                 <p>Kelvin Kipkosgei is a Full Stack Web Developer with a strong foundation in Django and front-end technologies such as HTML, CSS, JavaScript, and React.js. He excels at turning complex requirements into elegant, user-friendly web applications. Kelvin holds a Bachelor’s degree in Computer Science from Egerton University and has hands-on experience in network administration and troubleshooting, gained through an impactful internship with ICT Authority.</p>
-                <p id="about_content" class="about_content">Dedicated to continuous learning, Kelvin hones his skills through various courses to stay ahead of tech trends. He is passionate about collaborating to solve challenging problems and is driven by a commitment to meet both business goals and user needs. With a knack for writing clean, efficient code that powers responsive and secure websites, Kelvin is always ready to connect and build something amazing together.</p>
-                <button class="btn" id="view_more">view more</button>
+                <button class="btn" id="view_more" onclick="openModal()">view more</button>
             </div>
         </div>
+        <div class="modal" id="about_modal">    
+                    <div class="modal__half modal__about">
+                    <span class="close" onclick="closeModal()">&times;</span>
+
+                        <h3 class="modal__title modal__title--about">
+                          Here's a bit more about me
+                        </h3>
+                        <h4 class="modal__sub-title modal__sub-title--about">
+                            Fullstack web developer
+                        </h4>
+                        <p class="modal__para">
+                          I'm a <b class="orange">Fullstack web developer</b> with a strong passion for
+                          developing website with great <b class="orange">user experiences.</b> <br />
+                          I am dedicated to continuous learning, and hone my skills
+                          through various courses to stay ahead of tech trends.I am <b class="orange">passionate</b> about
+                          about collaborating to solve challenging problems and am driven by a commitment to meet both and <b class="orange"> business goals </b> and <b class="orange"> user needs</b>
+
+                        </p>
+                        <div class="modal__languages">
+                            <figure class="modal__language">
+                            <img src="assets/html.png" class="modal__language--img" alt="">
+                            <span class="language__name">Html </span>
+                            </figure>
+                            <figure class="modal__language">
+                            <img src="assets/css.png" class="modal__language--img" alt="">
+                            <span class="language__name">Css </span>
+                            </figure>
+                            <figure class="modal__language">
+                            <img src="assets/js.png" class="modal__language--img" alt="">
+                            <span class="language__name">Javascript </span>
+                            </figure>
+                            <figure class="modal__language">
+                            <img src="assets/python.png" class="modal__language--img" alt="">
+                            <span class="language__name">Python </span>
+                            </figure>
+                        </div>
+                       
+                    </div>
+                    <div class="modal__half modal__contact"> 
+                        <p>Let's connect and build something amazing together.</p>
+                        <a href="#contacts" class="btn">contact</a>
+                    </div>
+    
+                </div>
     </section>
+    
+    
     <!-- about section ends here -->
 
     <!-- background section starts here -->
@@ -134,7 +179,7 @@
                     <a href="https://github.com/Sanga78/photoalbum" class="title">Photo Album Website</a>
                     <span>Django, HTML, CSS, and JavaScript</span>
                     <p>Photoalbum is a site for managing and ordering your photos in albums</p>
-                    <a href="https://github.com/Sanga78/photoalbum" class="btn">read more</a>
+                    <a href="https://github.com/Sanga78/photoalbum" class="btn">Visit</a>
                 </div>
             </div>
             <div class="box">
@@ -145,7 +190,7 @@
                     <a href="https://github.com/Sanga78/plpfinalProject" class="title">Sunfresh Groceries</a>
                     <span>HTML, CSS, and JavaScript</span>
                     <p>Online grocery shop that deals in fresh juices, fruits and drinks</p>
-                    <a href="https://github.com/Sanga78/plpfinalProject" class="btn">read more</a>
+                    <a href="https://github.com/Sanga78/plpfinalProject" class="btn">Visit</a>
                 </div>
             </div>           
             <div class="box">
@@ -156,7 +201,7 @@
                     <a href="https://github.com/Sanga78/school" class="title">School Management System</a>
                     <span>Django, HTML, CSS, and JavaScript</span>
                     <p>This is a sytem for managing students,staff and the student attendance ,leaves and examintaion results</p>
-                    <a href="https://github.com/Sanga78/school" class="btn">read more</a>
+                    <a href="https://github.com/Sanga78/school" class="btn">Visit</a>
                 </div>
             </div>
         </div>
