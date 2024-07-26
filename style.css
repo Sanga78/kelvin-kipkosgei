@@ -4,8 +4,16 @@
     --bg: #010103;
     --border: 0.1rem solid rgba(255, 255, 255, 0.3);
     --white: rgb(255, 255, 255);
+    --home-background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url('assets/clint-patterson-dYEuFB8KQJk-unsplash.jpg');
 }
-
+.dark-mode {
+    --main-color: #f06449;
+    --black: rgba(255, 255, 255);
+    --bg: rgb(245, 245, 245);
+    --border: 0.1rem solid rgba(16, 11, 11, 0.3);
+    --white: #13131a;
+    --home-background-image: linear-gradient(to right, rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('assets/clint-patterson-dYEuFB8KQJk-unsplash.jpg');
+}
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -34,7 +42,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #fff;
+    background: var(--white);
     border-radius: 5rem;
 }
 
@@ -48,7 +56,7 @@ section {
 
 .heading {
     text-align: center;
-    color: #fff;
+    color: var(--white);
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
@@ -58,14 +66,16 @@ section {
     color: var(--main-color);
     text-transform: uppercase;
 }
-
+header i{
+    color: var(--white);
+}
 .btn,
 button {
     margin-top: 1rem;
     display: inline-block;
     padding: 0.9rem 3rem;
     font-size: 1.7rem;
-    color: #fff;
+    color: var(--white);
     background: var(--main-color);
     cursor: pointer;
     border-radius: 0.5rem;
@@ -97,7 +107,7 @@ button {
 .header .navbar a {
     margin: 0 1rem;
     font-size: 1.6rem;
-    color: #fff;
+    color: var(--white);
 }
 
 .header .navbar a:hover {
@@ -117,7 +127,7 @@ button {
 }
 
 .header .icons i {
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -126,7 +136,13 @@ button {
 .header .icons i:hover {
     color: var(--main-color);
 }
-
+.header #toggleButton{
+    border: none;
+    background-color: transparent;
+}
+.header #toggleButton i{
+    color: var(--white);
+}
 #menu-btn {
     display: none;
 }
@@ -136,7 +152,7 @@ button {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url('assets/clint-patterson-dYEuFB8KQJk-unsplash.jpg');
+    background-image: var(--home-background-image);
     background-size: cover;
     background-position: center;
     animation: fadeIn 1.5s ease-in-out;
@@ -161,7 +177,7 @@ button {
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
-    color: #fff;
+    color: var(--white);
 }
 .profile_pic{
     animation: fade-in-left 1s ease-out forwards;
@@ -181,13 +197,13 @@ figure {
     padding: 30px;
     margin: 0;
     border-radius: 200px 200px 200px 0;
+    color: var(--white);
 }
   
 figure:hover {
     background-color: rgba(255, 253, 253, 0.423);
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
-    color: var(--black);
 }
   
 figure img {
@@ -300,7 +316,7 @@ figcaption{
 .contacts .row h3 {
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--white);
 }
 
 .blogs .box-container {
@@ -312,12 +328,6 @@ figcaption{
 .blogs .box-container .box {
     border: var(--border);
 }
-
-/* .blogs .box-container .box .image {
-    height: 25rem;
-    overflow: hidden;
-    width: 100%;
-} */
 
 .blogs .box-container .box .image img {
     height: 100%;
@@ -343,7 +353,7 @@ figcaption{
 .blogs .box-container .box .content .title {
     font-size: 2.5rem;
     line-height: 1.5;
-    color: #fff;
+    color: var(--white);
 }
 
 .blogs .box-container .box .content .title:hover {
@@ -360,7 +370,7 @@ figcaption{
 .blogs .box-container .box .content p {
     font-size: 1.6rem;
     line-height: 1.8;
-    color: #ccc;
+    color: var(--white);
     padding: 1rem 0;
 }
 
@@ -379,7 +389,7 @@ figcaption{
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    color: #fff;
+    color: var(--white);
     border: var(--border);
     margin: 0.3rem;
     border-radius: 50%;
@@ -399,7 +409,7 @@ figcaption{
 
 .footer .links a {
     padding: 0.7rem 2rem;
-    color: #fff;
+    color: var(--white);
     border: var(--border);
     font-size: 2rem;
 }
@@ -410,7 +420,7 @@ figcaption{
 
 .footer .credit {
     font-size: 2rem;
-    color: #fff;
+    color: var(--white);
     font-weight: lighter;
     padding: 1.5rem;
 }
