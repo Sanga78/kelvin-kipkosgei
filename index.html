@@ -4,270 +4,572 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kelvin-kipkosgei</title>
+    <title>Kelvin Kipkosgei | Full Stack Developer</title>
     <!-- fontawesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- custom css link -->
-    <link rel="stylesheet" href="style.css">
-    <!-- javascript link -->
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="new.css">
 </head>
 <body>
     <!-- header section starts here -->
     <header class="header">
-        <button id="toggleButton"><i class="fas fa-circle-half-stroke fa-adjust"></i></button>
-        <nav class="navbar" id="nav">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#background">Background</a>
-            <a href="#projects">projects</a>
-            <a href="#contacts">contacts</a>
-        </nav>
- 
-            <input class="menu-btn" type="checkbox" id="menu-btn" style="display: none;"/>
-            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-
+        <div class="header-container">
+            <a href="#" class="logo">KK</a>
+            <button id="toggleButton" aria-label="Toggle dark mode">
+                <i class="fas fa-circle-half-stroke"></i>
+            </button>
+            <nav class="navbar" id="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#background" class="nav-link">Background</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
     </header>
     <!-- header section ends here -->
 
-    <!-- home section starts here -->
-    <section class="home fade-in" id="home">
-        <div class="content">
-            <h3>Welcome to my portfolio</h3>
-            <a href="#" class="btn">Kelvin Kipkosgei/Full stack developer</a>
+    <!-- hero section starts here -->
+    <section class="hero fade-in" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h4 class="hero-subtitle">Hello, I'm</h4>
+                <h1 class="hero-title">Kelvin Kipkosgei</h1>
+                <h2 class="hero-role">Full Stack Developer</h2>
+                <p class="hero-description">Creating elegant, user-friendly web applications with Django, React, and modern web technologies.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <img src="assets/Kelvin.png" alt="Kelvin Kipkosgei" class="profile-img">
+                    <div class="profile-overlay">
+                        <div class="social-links">
+                            <a href="https://github.com/Sanga78" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://ke.linkedin.com/in/kelvin-kipkosgei-867694279" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/Sangakelv" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="profile_pic">
-            <figure>
-                <img src="assets/Kelvin.png" alt="Kelvin Kipkosgei">
-                <figcaption>Dev Kelvin Kipkosgei</figcaption>
-            </figure>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
-    <!-- home section ends here -->
+    <!-- hero section ends here -->
 
     <!-- about section starts here -->
-    <section class="about" id="about">
-        <h1 class="heading"><span>about</span> me </h1>
-        <div class="row">
-            <div class="image">
-                <img src="assets/arnold-francisca-FBNxmwEVpAc-unsplash.jpg" alt="">
+    <section class="about section" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title"><span>About</span> Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
             </div>
-            <div class="content">
-                <p>Kelvin Kipkosgei is a Full Stack Web Developer with a strong foundation in Django and front-end technologies such as HTML, CSS, JavaScript, and React.js. He excels at turning complex requirements into elegant, user-friendly web applications. Kelvin holds a Bachelor’s degree in Computer Science from Egerton University and has hands-on experience in network administration and troubleshooting, gained through an impactful internship with ICT Authority.</p>
-                <button class="btn" id="view_more" onclick="openModal()">view more</button>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/arnold-francisca-FBNxmwEVpAc-unsplash.jpg" alt="About Kelvin" class="about-img">
+                </div>
+                <div class="about-text">
+                    <h3 class="about-heading">Who am I?</h3>
+                    <p class="about-description">
+                        I'm a Full Stack Web Developer with a strong foundation in Django and front-end technologies such as HTML, CSS, JavaScript, and React.js. I excel at turning complex requirements into elegant, user-friendly web applications.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BSc Computer Science from Egerton University</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Networking Consultant at ICT Authority</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="view_more" onclick="openModal()">More About Me</button>
+                </div>
             </div>
         </div>
-        <div class="modal" id="about_modal">    
-                    <div class="modal__half modal__about">
-                    <span class="close" onclick="closeModal()">&times;</span>
-
-                        <h3 class="modal__title modal__title--about">
-                          Here's a bit more about me
-                        </h3>
-                        <h4 class="modal__sub-title modal__sub-title--about">
-                            Fullstack web developer
-                        </h4>
-                        <p class="modal__para">
-                          I'm a <b class="orange">Fullstack web developer</b> with a strong passion for
-                          developing website with great <b class="orange">user experiences.</b> <br />
-                          I am dedicated to continuous learning, and hone my skills
-                          through various courses to stay ahead of tech trends.I am <b class="orange">passionate</b> about
-                          about collaborating to solve challenging problems and am driven by a commitment to meet both and <b class="orange"> business goals </b> and <b class="orange"> user needs</b>
-
-                        </p>
-                        <div class="modal__languages">
-                            <figure class="modal__language">
-                            <img src="assets/html.png" class="modal__language--img" alt="">
-                            <span class="language__name">Html </span>
-                            </figure>
-                            <figure class="modal__language">
-                            <img src="assets/css.png" class="modal__language--img" alt="">
-                            <span class="language__name">Css </span>
-                            </figure>
-                            <figure class="modal__language">
-                            <img src="assets/js.png" class="modal__language--img" alt="">
-                            <span class="language__name">Javascript </span>
-                            </figure>
-                            <figure class="modal__language">
-                            <img src="assets/python.png" class="modal__language--img" alt="">
-                            <span class="language__name">Python </span>
-                            </figure>
-                        </div>
-                       
-                    </div>
-                    <div class="modal__half modal__contact"> 
-                        <p>Let's connect and build something amazing together.</p>
-                        <a href="#contacts" class="btn">contact</a>
-                    </div>
-    
-                </div>
     </section>
     
-    
+    <!-- Modal -->
+    <div class="modal" id="about_modal">    
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-half modal-about">
+                <h3 class="modal-title">
+                    Here's a bit more about me
+                </h3>
+                <h4 class="modal-subtitle">
+                    Fullstack Web Developer
+                </h4>
+                <p class="modal-text">
+                    I'm a <span class="highlight">Fullstack web developer</span> with a strong passion for developing websites with great <span class="highlight">user experiences</span>. I am dedicated to continuous learning, and hone my skills through various courses to stay ahead of tech trends.
+                </p>
+                <p class="modal-text">
+                    I am <span class="highlight">passionate</span> about collaborating to solve challenging problems and am driven by a commitment to meet both <span class="highlight">business goals</span> and <span class="highlight">user needs</span>.
+                </p>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="assets/html.png" alt="HTML" class="skill-icon">
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/css.png" alt="CSS" class="skill-icon">
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/js.png" alt="JavaScript" class="skill-icon">
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/python.png" alt="Python" class="skill-icon">
+                        <span class="skill-name">Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-half modal-contact"> 
+                <h3 class="modal-title">Let's Connect</h3>
+                <p class="modal-text">I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                <a href="#contact" class="btn btn-primary" onclick="closeModal()">Contact Me</a>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>kelvinkipkosgei@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+254 714710947</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- about section ends here -->
 
-    <!-- background section starts here -->
-    <section class="background" id="background">
-        <h1 class="heading"><span>My</span> background </h1>
-        <div class="row">
-            <div>
-                <h2>Education</h2>
-                <ul>
-                    <li>BSc Computer Science from ​Egerton University, April 2024</li>
-                    <li>KCSE Lelmokwo Boys High School, ​2019</li>
-                </ul>
+    <!-- skills section starts here -->
+    <section class="skills section" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">My <span>Skills</span></h2>
+                <p class="section-subtitle">Technologies I work with</p>
             </div>
-            <div>
-                <h2>Work Experience</h2>
-                <ul>
-                    <li>Networking Consultant at ICT ​Authority, May 2023-August 2023</li>
-                </ul>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="assets/html.png" alt="HTML">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/css.png" alt="CSS">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/js.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/react.png" alt="React">
+                            <span>React.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="assets/python.png" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/django.png" alt="Django">
+                            <span>Django</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/php.png" alt="PHP">
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/nodejs.png" alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Other</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="assets/git.png" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/mysql.png" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/wordpress.png" alt="WordPress">
+                            <span>WordPress</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <center><a href="assets/KELVIN KIPKOSGEI RESUME (2).pdf" class="btn">Resume</a></center>
     </section>
-    <!-- background section ends here -->
+    <!-- skills section ends here -->
 
     <!-- projects section starts here -->
-    <section class="blogs" id="projects">
-        <h1 class="heading"> My <span>Projects</span></h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="assets/zeta.png" alt="">
+    <section class="projects section" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">My <span>Projects</span></h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="django">Django</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="wordpress">WordPress</button>
+                <button class="filter-btn" data-filter="PHP">PHP</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="django">
+                    <div class="project-image">
+                        <img src="assets/zeta.png" alt="Zeta CarHires">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://carhires.zetaagencies.com" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Zeta CarHires</h3>
+                        <p class="project-description">Car renting website for booking and managing car hires and sales</p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="content">
-                    <a href="https://carhires.zetaagencies.com" class="title">Zeta CarHires</a>
-                    <span>Django, HTML, CSS, and JavaScript</span>
-                    <p>Car renting website for booking and managing car hires and sales</p>
-                    <a href="https://carhires.zetaagencies.com" class="btn">Visit</a>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="wordpress">
+                    <div class="project-image">
+                        <img src="assets/sergio.png" alt="SERGIO.CO.KE">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://sergio.co.ke" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">SERGIO.CO.KE</h3>
+                        <p class="project-description">A blog delivering comprehensive news coverage and expert opinions</p>
+                        <div class="project-tags">
+                            <span class="tag">WordPress</span>
+                            <span class="tag">CMS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="django">
+                    <div class="project-image">
+                        <img src="assets/Novatech.png" alt="Continental Banking Site">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ecomart-na1f.onrender.com/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">NovaTech Electronics</h3>
+                        <p class="project-description">Ecommerce site for selling Electronics(TVs,Phones,Laptops and other accessories)</p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-category="django">
+                    <div class="project-image">
+                        <img src="assets/admin.png" alt="Guard Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://guard-management-system.onrender.com/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Sanga78/Guard-management-system" class="project-link">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Guard Management System</h3>
+                    <p class="project-description">Guard Management System is a web-based application designed to manage guards, their attendance, shifts, and departments. It provides features for adding guards, managing their details, tracking attendance, and generating reports.</p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <img src="assets/bloom.png" alt="Blooming Future">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://blooming-future.onrender.com" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Blooming Future</h3>
+                        <p class="project-description">Blooming future is a site for empowering youth and the vulnerable in the community</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="django">
+                    <div class="project-image">
+                        <img src="assets/continental.png" alt="Continental Banking Site">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/cynthiakoskei/AfricanecityBankLoan" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Continental Banking Site</h3>
+                        <p class="project-description">Banking site for recommending banks with interest rates based on income and periods</p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="PHP">
+                    <div class="project-image">
+                        <img src="assets/event.png" alt="Event Booking Site">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Sanga78/Eventticket-booking-system" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Sanga78/Eventticket-booking-system" class="project-link">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Online Event Ticket Booking System</h3>
+                        <p class="project-description">E-ticket management System for selling event tickets ,managing sells for a specific events and managing customers</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">HTML,CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <img src="assets/sunfresh.png" alt="Event Booking Site">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://sanga78.github.io/plpfinalProject/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://sanga78.github.io/plpfinalProject/" class="project-link">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sunfresh Groceries</h3>
+                        <p class="project-description">Online grocery shop that deals in fresh juices, fruits and drinks</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="image">
-                    <img src="assets/sergio.png" alt="">
-                </div>
-                <div class="content">
-                    <a href="https://sergio.co.ke" class="title">SERGIO.CO.KE</a>
-                    <span>Wordpress</span>
-                    <p>A blog that delivers comprehensive news coverage,insightful analyses, and expert opinions on politics,business,technology and culture</p>
-                    <a href="https://sergio.co.ke" class="btn">Visit</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="assets/continental.png" alt="">
-                </div>
-                <div class="content">
-                    <a href="https://github.com/cynthiakoskei/AfricanecityBankLoan" class="title">Continental Banking Site</a>
-                    <span>Django, HTML, CSS, and JavaScript</span>
-                    <p>A banking site for recommending banks with an intrest rates based on income and periods</p>
-                    <a href="https://github.com/cynthiakoskei/AfricanecityBankLoan" class="btn">Visit</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="assets/event.png" alt="">
-                </div>
-                <div class="content">
-                    <a href="https://github.com/Sanga78/Eventticket-booking-system" class="title">Online Event Ticket Booking System</a>
-                    <span>PHP, HTML, CSS, and JavaScript</span>
-                    <p>E-ticket management System for selling event tickets ,managing sells for a specific events and managing customers</p>
-                    <a href="https://github.com/Sanga78/Eventticket-booking-system" class="btn">Visit</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="assets/Novatech.png" alt="">
-                </div>
-                <div class="content">
-                    <a href="https://ecomart-na1f.onrender.com" class="title">NovaTech Electronics and Accessories</a>
-                    <span>Django, HTML, CSS, and JavaScript</span>
-                    <p>Ecomart is an ecomerce shope for elctronics including laptops,Tv sets and phone and also their accesories(chargers)</p>
-                    <a href="https://ecomart-na1f.onrender.com" class="btn">Visit</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="assets/photoalbum.png" alt="">
-                </div>
-                <div class="content">
-                    <a href="https://github.com/Sanga78/photoalbum" class="title">Photo Album Website</a>
-                    <span>Django, HTML, CSS, and JavaScript</span>
-                    <p>Photoalbum is a site for managing and ordering your photos in albums</p>
-                    <a href="https://github.com/Sanga78/photoalbum" class="btn">Visit</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="assets/sunfresh.png" alt="">
-                </div>
-                <div class="content">
-                    <a href="https://sanga78.github.io/plpfinalProject/" class="title">Sunfresh Groceries</a>
-                    <span>HTML, CSS, and JavaScript</span>
-                    <p>Online grocery shop that deals in fresh juices, fruits and drinks</p>
-                    <a href="https://github.com/Sanga78/plpfinalProject" class="btn">Visit</a>
-                </div>
-            </div>           
-            <div class="box">
-                <div class="image">
-                    <img src="assets/admin.png" alt="">
-                </div>
-                <div class="content">
-                    <a href="https://github.com/Sanga78/Guard-management-system" class="title">Guard Management System</a>
-                    <span>Django, HTML, CSS, and JavaScript</span>
-                    <p>Guard Management System is a web-based application designed to manage guards, their attendance, shifts, and departments. It provides features for adding guards, managing their details, tracking attendance, and generating reports.</p>
-                    <a href="https://github.com/Sanga78/Guard-management-system" class="btn">Visit</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="assets/school.png" alt="">
-                </div>
-                <div class="content">
-                    <a href="https://github.com/Sanga78/school" class="title">School Management System</a>
-                    <span>Django, HTML, CSS, and JavaScript</span>
-                    <p>This is a sytem for managing students,staff and the student attendance ,leaves and examintaion results</p>
-                    <a href="https://github.com/Sanga78/school" class="btn">Visit</a>
-                </div>
+            <div class="projects-cta">
+                <a href="https://github.com/Sanga78" target="_blank" class="btn btn-outline">View More on GitHub</a>
             </div>
         </div>
     </section>
     <!-- projects section ends here -->
 
-    <!-- contacts section starts here -->
-    <section class="contacts" id="contacts">
-        <div class="heading"><span>contact</span>s</div>
-        <div class="row">
-            <div>
-                <h3>Email</h3>
-                <p style="text-transform: lowercase;">kelvinkipkosgei@gmail.com</p>
+    <!-- background section starts here -->
+    <section class="background section" id="background">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">My <span>Background</span></h2>
+                <p class="section-subtitle">Education and experience</p>
             </div>
-            <div><h3>phone number</h3>
-            <p>+(254) 714710947</p></div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">BSc Computer Science</h3>
+                        <p class="timeline-location">Egerton University</p>
+                        <p class="timeline-description">Graduated with a Bachelor's degree in Computer Science.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Networking Consultant</h3>
+                        <p class="timeline-location">ICT Authority</p>
+                        <p class="timeline-description">Hands-on experience in network administration and troubleshooting.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">KCSE</h3>
+                        <p class="timeline-location">Lelmokwo Boys High School</p>
+                        <p class="timeline-description">Completed secondary education.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-cta">
+                <a href="assets/KELVIN KIPKOSGEI RESUME (2).pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
         </div>
     </section>
-    <!-- contacts section ends here -->
+    <!-- background section ends here -->
+
+    <!-- contact section starts here -->
+    <section class="contact section" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>kelvinkipkosgei@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>+254 714710947</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- contact section ends here -->
 
     <!-- footer section starts here -->
-    <section class="footer">
-        <div class="share">
-            <a href="https://web.facebook.com/kelvin.sanga.7334?_rdc=1&_rdr" class="fab fa-facebook-f" aria-hidden="true"></a>
-            <a href="https://x.com/Sangakelv?t=ETYJho0LMYL8NORqL5gRVw&s=09" class="fab fa-twitter" aria-hidden="true"></a>
-            <a href="https://www.instagram.com/" class="fab fa-instagram" aria-hidden="true"></a>
-            <a href="https://ke.linkedin.com/in/kelvin-kipkosgei-867694279" class="fab fa-linkedin" aria-hidden="true"></a>
-            <a href="https://github.com/Sanga78" class="fab fa-github" aria-hidden="true"></a>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">KK</a>
+                    <p>Full Stack Developer creating digital experiences that matter.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Sanga78" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://ke.linkedin.com/in/kelvin-kipkosgei-867694279" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/Sangakelv" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://web.facebook.com/kelvin.sanga.7334" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Kelvin Kipkosgei. All rights reserved.</p>
+            </div>
         </div>
-        <div class="links">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#projects">projects</a>
-            <a href="#contacts">contacts</a>
-            <a href="#background">background</a>
-        </div>
-        <div class="credit"> &copy; <span>kelvin kipkosgei</span> 2024 | all rights reserved </div>
-    </section>
+    </footer>
     <!-- footer section ends here -->
-    <script src="new.js"></script>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
